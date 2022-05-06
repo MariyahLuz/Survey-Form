@@ -1,57 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
+<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+<main>
 
-<head>
-    <meta charset="UTF-8" />
-    <title id="title">
-        <h1>Survey Form</h1>
-    </title>
-    <link rel="stylesheet" href="css/style.css" />
-</head>
 
-<body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <h1>Hello World, we are software developers!</h1>
-    <p id="description">This is a survey form</p>
 
-    <form id="survey-form">
-        <label for="name" id="name-label">name:</label>
-        <input type="text" id="name" placeholder="Enter your name" />
-        <label for="email" id="email-label">email:</label>
-        <input type="Email" id="email" placeholder="Enter your email" />
-        <label for="number" id="number-label">number"</label>
-        <input type="Number" id="Number" placeholder="Enter your number" min="10" max="100" />
+    <head>
+      <h1 id="title">
+        Survey Form
+      </h1>
+    </head>
+<div id="corpo">
+    <body>
+      <p id="description">
+        Let me know how happy are you about school nowadays </p>
+      <form id="survey-form" action="">
+        <div id="label">
+          <div>
+            <label id="name-label" for="name"> *Name: <input id="name" type="text"  class="input-field"  placeholder="Enter your name" required></label></div>
 
-        <label for="drop-down">Select an option:</label>
-        <select id="dropdown">
-        <option value="fruit1">Apples</option>
-        <option value="fruit2">Bananas</option>
-        <option value="fruit3">Melons</option>
-        <option value="fruit4">Paw-paws</option>
-      </select>
-        <label for="Green Apples">Green Apples
-		<input id="Green Apples" type="radio" name="Green Apples" value="Green Apples">
-	</label>
-        <label for="Red Apples">Red Apples
-		<input id="Red Apples" type="radio" name="Green Apples" value="Red Apples">
-    </label>
+          <div>
+            <label id="email-label" for="email">*Email: <input id="email" type="email" class="input-field" placeholder="Enter your email" required></label></div>
 
-        <label for="box1">Box1
-      <input id="box1" type="checkbox" name="box1" value="box1">
-    </label>
-        <label for="box2">Box2
-      <input id="box2" type="checkbox" name="box2" value="box2">
-    </form>
+          <div><label id="number-label" for="number">*Age: <input type="number" name="age" id="number" min="1" max="100" class="input-field" placeholder="Age"></label></div>
 
-    <div id= "comment-section">
-      <label for="comments">
-        Do you have any Comments?</label>
+          <label for="dropdown">*What is your Highest Level of Education:</label>
+        
+      <select id="dropdown" class="dropdown">
+        <option disabled selected value>Select an option</option>
+        <option value="Not completed 12th">Not completed 12th</option>
+        <option value="Completed 12th">Completed 12th</option>
+          <option value="Polytechnic Diploma">Polytechnic Diploma</option>
+        <option value="Graduate">Graduate</option>
+        <option value="Post-Graduate">Post Graduate</option>
+        </select>
+    </div>
+        <div id="butoes">
+<div id="algo">
+    <label for="pq">*Why do you go to school?</label>   </div>
+          <ul id="porque" style="list-style: none; ">
+            <li class="radio-buttons"> <label><input type="radio" class="pq" value="1" name="name">Parents</label></li>
+            <li class="radio-buttons"> <label><input type="radio" class="pq" value="2" name="name">Obligation</label></li>
+            <li class="radio-buttons"> <label><input type="radio" class="pq" value="3" name="name">You like</label></li>
+          </ul>
+     
+          <label for="seleciona">*What do you like more in School?<br>(Check all that apply)</label>
+
+          <ul id="explica" style="list-style:none; ">
+            <li class="checkbox"><label><input type="checkbox" value="1" class="seleciona">Food</label></li>
+            <li class="checkbox"><label><input type="checkbox" value="2" class="seleciona">Friends</label></li>
+            <li class="checkbox"><label><input type="checkbox" value="3" class="seleciona">Teachers</label></li>
+            <li class="checkbox"><label><input type="checkbox" value="4" class="seleciona">Subjects</label></li>
+            <li class="checkbox"><label><input type="checkbox" value="5" class="seleciona">Sleep</label></li>
+          </ul>
+        </div>
+            
+     <div id=fim>
+        <label for="comments">
+          Any Comments or Suggestions?</label>
 
         <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
         </div>
-        <div><button type="submit" id="submit" class="dropdown"> Submit </button></div>
-
-        <script src="js/index.js"></script>
-</body>
-
-</html>
+      
+      <button type="submit" id="submit" class="dropdown"> Submit </button>
+      <p id="fimfim">* necessary to fill</p>
+        </div>
+  </form>
+    </body>
+ 
+</main>
